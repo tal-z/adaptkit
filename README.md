@@ -499,7 +499,11 @@ A suite of 5 interactive demos showcases each adaptive dimension in a realistic 
 | **Familiarity** | Onboarding wizard that simplifies on return visits                                                          |
 | **Task**        | Multi-step checkout with time awareness, step tracking, and return detection                                |
 
-### Running the demos
+### Live demo
+
+**[tal-z.github.io/adaptkit](https://tal-z.github.io/adaptkit/)**
+
+### Running locally
 
 ```bash
 # Build the packages first (demos consume dist/)
