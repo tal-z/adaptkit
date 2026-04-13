@@ -1,0 +1,58 @@
+{
+  "name": "@adaptkit/core",
+  "version": "0.1.0",
+  "description": "A client-side context engine for building adaptive web UI",
+  "license": "Elastic-2.0",
+  "author": "AdaptKit Contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adaptkit/core"
+  },
+  "homepage": "https://github.com/adaptkit/core#readme",
+  "bugs": "https://github.com/adaptkit/core/issues",
+  "keywords": [
+    "adaptive-ui",
+    "context",
+    "friction",
+    "ux",
+    "interaction",
+    "detection",
+    "rage-click",
+    "dead-click",
+    "form-thrashing",
+    "environment",
+    "behavior",
+    "familiarity",
+    "sdk",
+    "browser"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "devDependencies": {
+    "jsdom": "^26",
+    "tsup": "^8",
+    "typescript": "^5",
+    "vitest": "^3"
+  }
+}
